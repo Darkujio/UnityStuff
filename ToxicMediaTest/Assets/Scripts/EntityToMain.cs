@@ -21,17 +21,6 @@ public class EntityToMain : MonoBehaviour
         rend.material = Enemy_Material;
         floor = GameObject.Find("Floor");
     }
-    void OnValidate(){
-        rend = gameObject.GetComponent<Renderer> ();
-        //TransformTargetToMainHero
-        if (MainHero){
-            rend.material = Hero_Material;
-        }
-        //RemoveheroProperties
-        if (!MainHero){
-            rend.material = Enemy_Material;
-        }
-    }
     void Start(){
         if (Application.isPlaying){
             GameController = GameObject.Find("GameController").GetComponent<GameController>();
@@ -46,6 +35,12 @@ public class EntityToMain : MonoBehaviour
         RemoveFlag = true;
     }
     void Update(){
+        if (MainHero){
+            rend.material = Hero_Material;
+        }
+        if (!MainHero){
+            rend.material = Enemy_Material;
+        }
         if (RemoveFlag){
             if (gameObject.transform.position.y < -1 & !MainHero){
                 Destroy(gameObject,3);
