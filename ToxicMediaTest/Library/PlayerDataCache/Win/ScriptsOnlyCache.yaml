@@ -3,8 +3,10 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - DataHolder
     - EditorCharacterCreator
+    - EntityController
     - EntityToMain
     - GameController
+    - Swipehandler
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.Graphs.dll:
@@ -77,6 +79,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 12596}
     - Class: 114
       Script: {instanceID: 12946}
+    - Class: 114
+      Script: {instanceID: 13788}
+    - Class: 114
+      Script: {instanceID: 28680}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -546,7 +552,19 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 3b2385690dfb432cf8ba040f2889a08a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EntityController
+  - hash:
+      serializedVersion: 2
+      Hash: 1ce444e288f8fd33d69c838c7e75d622
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Swipehandler
   platform: 5
   scenePathNames:
   - Assets/Scenes/Main.unity
-  playerPath: C:/Users/Ujeen/Documents/GitHub/UnityStuff/ToxicMediaTest/Build/ToxicMediaTest.exe
+  playerPath: C:/Users/Ujeen/Documents/GitHub/UnityStuff/ToxicMediaTest/BuildFixed/ToxicMediaTest.exe
